@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* background-color: #3d3d3d; 1 - primeiro fundo*/
+  /* background: linear-gradient(to bottom, #3a3a3a, #1e1e1e); 2 - segundo fundo*/
+  background: radial-gradient(ellipse at top, #4a4a4a, #212121);
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+#navigation {
+  background-color: #256f74;
+  color: #ffff;
+  font-family: "Potta One", sans-serif;
+  font-size: 12px;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding-top: 0.5rem;
+  padding-right: 2rem;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+#navigation a {
+  text-decoration: none;
+  color: #ffff;
+  font-weight: bold;
+  padding-bottom: 5px;
+  margin-right: 20px;
+  border-bottom: 2px solid #ffff;
+  transition: border-bottom 0.3s;
+}
+
+#navigation a:hover {
+  color: #ce4e50;
+  border-bottom: 2px solid #ce4e50;
+}
+
+#home {
+  display: flex;
+  font-family: "Potta One", sans-serif;
+  padding-top: 2.5rem;
+}
+
+#title-1 {
+  padding-left: 5.5rem;
+  padding-top: 8.5rem;
+  font-size: 23px;
+}
+
+.blue1 {
+  color: #67b9cc;
+}
+
+.blue2 {
+  color: #67b9cc;
+  padding-left: 100px;
+}
+
+.red2 {
+  color: #ce4e50;
+  padding-left: 110px;
+}
+
+.red3 {
+  color: #ce4e50;
+}
+
+#title-2 {
+  padding-left: 30rem;
+  padding-top: 5rem;
+  font-size: 30px;
+}
+
+.descricao {
+  width: 500px;
+  padding-top: 1.5rem;
+  padding-left: 5.5rem;
+  color: #aaaaaa;
+}
+
+.line {
+  border: none;
+  border-top: 1px solid #ccc;
+  width: 100%;
+  margin: 5.5rem auto 0 auto;
+  opacity: 0.3;
+}
+
+.sub-title {
+  display: block;
+  background-color: #256f74;
+  color: #ffff;
+  font-family: "Potta One", sans-serif;
+  font-size: 12px;
+  text-align: center;
+  margin: 3.5rem auto 0 auto;
+  padding: 1rem;
+  width: 15%;
+  border-radius: 50px;
+}
+
+.tecnologias {
+  display: block;
+  background-color: #256f74;
+  margin: 3.5rem auto 0 auto;
+  padding: 2.5rem;
+  width: 55%;
+  border-radius: 50px;
+}
+
+.project {
+  display: block;
+  background-color: #256f74;
+  color: #ffff;
+  font-family: "Potta One", sans-serif;
+  font-size: 12px;
+  text-align: center;
+  margin: 3.5rem auto 0 auto;
+  padding: 1rem;
+  width: 15%;
+  border-radius: 50px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.box {
+  width: 200px;
+  height: 120px;
+  background-color: #D9D9D9;
+  border-radius: 15px;
+  min-height: 150px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  margin-top: 3.5rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+  color: #fff;
+}
+
+.colchetes1 {
+  color: #fff;
+}
+
+.more {
+  display: block;
+  background-color: #CE4E50;
+  color: #ffff;
+  font-family: "Potta One", sans-serif;
+  font-size: 12px;
+  text-align: center;
+  margin: 3.5rem auto 0 auto;
+  padding: 0.5rem;
+  width: 10%;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.more:hover {
+  color: #67b9cc;
+}
+
+.icon-laptop {
+  height: 55px;
+  padding: 0;
+}
+
+.laptop {
+  padding-left: 12rem;
+}
+
+.icon-laptop-low {
+  height: 10px;
+  padding: 0;
+}
+
+.laptop-low {
+  padding-left: 2rem;
+}
