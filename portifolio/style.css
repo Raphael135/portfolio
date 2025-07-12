@@ -106,6 +106,7 @@ body {
   text-align: center;
   margin: 3.5rem auto 0 auto;
   padding: 1rem;
+  margin-top: 5rem;
   width: 15%;
   border-radius: 50px;
 }
@@ -199,3 +200,10 @@ body {
 .laptop-low {
   padding-left: 2rem;
 }
+
+.descricao2 {
+  color: #fff;
+  margin-top: 5rem;
+  width: 50%;
+}
+
