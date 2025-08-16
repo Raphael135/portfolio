@@ -7,13 +7,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
       href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
     <title>Meu portifolio</title>
   </head>
   <body>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span id="closeModal">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <img id="modalImg" src="" alt="preview" />
+        <p id="modalDescription"></p>
+        <a id="modalLink" href="#" target="_blank" class="btn">Ver no GitHub</a>
+      </div>
+    </div>
     <nav id="navigation">
       <ul>
         <a href="#">.Sobre mim</a>
@@ -31,35 +46,20 @@
 
     <main>
       <section id="home">
-        <div id="title-1">
-          <h2 class="blue1">#Desenvolvedor</h2>
-          <h2 class="red2">.Full Stack</h2>
+        <div class="title-1">
+          <p>Oi, eu sou 👨‍💻</p>
+          <h2>Raphael</h2>
+          <h2>Rodolfo</h2>
         </div>
 
-        <div id="title-2">
-          <div class="icon-laptop">
-            <img src="./image/laptop.png" alt="laptop-code" class="laptop" />
-          </div>
-          <h2 class="red3">
-            <span class="icon">{</span>Raphael<span class="icon">:</span>
-          </h2>
-          <h2 class="blue2">Rodolfo<span class="icon">;}</span></h2>
-          <div class="icon-laptop-low">
-            <img src="./image/laptop-low.png" alt="laptop-low" class="laptop-low">
-          </div>
-        </div>
+        <div class="profile"><img src="image/profile/foto_de_perfil.jpeg" alt="profile-img"></div>
       </section>
 
       <section>
         <div class="descricao">
+          <p id="descricao3">Desenvolvedor Fullstack</p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
-            tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrum exercitationem ullam corporis suscipit
-            laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute
-            iure reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt
-            in culpa qui officia deserunt mollit anim id est laborum.
+            Código com propósito: acessível, moderno e cheio de impacto.
           </p>
         </div>
       </section>
@@ -69,28 +69,103 @@
         <div class="sub-title">
           <h2>Tecnologias</h2>
         </div>
-        <div class="tecnologias"></div>
+        <div class="tecnologias">
+          <img
+            src="./image/icons/javascript.webp"
+            alt="javascript-icon"
+            class="icons" />
+          <img
+            src="./image/icons/typescript.webp"
+            alt="typescript-icon"
+            class="icons" />
+          <img src="./image/icons/react-.png" alt="react-icon" class="icons" />
+          <img src="./image/icons/next.png" alt="next-icon" class="icons" />
+          <img src="./image/icons/node.png" alt="node-icon" class="icons" />
+          <img src="./image/icons/docker.png" alt="docker-icon" class="icons" />
+        </div>
       </section>
       <hr class="line" />
 
-      <section>
-        <div class="project">
+      <section data-aos="flip-right">
+        <div class="project" data-aos="fade-up">
           <h2>Projetos</h2>
         </div>
-        <div class="grid">
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
+        <div class="grid" data-aos="zoom-in">
+          <div class="box">
+            <img
+              src="./image/projects-img/prime-video.png"
+              alt="Prime Video"
+              class="projects modal-trigger"
+              data-title="Prime Video Clone"
+              data-description="Clone da landing page da Amazon Prime Video feito em HTML, CSS e JS."
+              data-link="https://github.com/Raphael135/prime-video-clone" />
+          </div>
+
+          <div class="box">
+            <img
+              src="./image/projects-img/spotify-player.png"
+              alt="Spotify Player"
+              class="projects modal-trigger"
+              data-title="Spotify Player"
+              data-description="Reprodução de um player inspirado no Spotify, usando HTML, CSS e JS."
+              data-link="https://github.com/Raphael135/spotify-player" />
+          </div>
+          <div class="box">
+            <img
+              src="./image/projects-img/iphone13-shop.png"
+              alt="iphone13-landding-page"
+              class="projects modal-trigger"
+              data-title="Ladding Page Iphone 13"
+              data-description="Projeto de landing page do Iphone 13 utilizando HTML CSS e JavaScript, 
+              criei uma tela de compra do aparelho e podendo alterar a cor, logo abaixo você pode ver como ficou o projeto."
+              data-link="https://github.com/Raphael135/spotify-player" />
+          </div>
+          <div class="box">
+            <img
+              src="./image/projects-img/netflx-land-page.png"
+              alt="netflx-land-page"
+              class="projects modal-trigger"
+              data-title="Netflix"
+              data-description="Concluí o projeto da tela de login da Netflix com sucesso,
+               combinando habilidades de HTML e CSS para criar uma interface autêntica e atraente. 
+               Comecei estruturando a página com elementos semânticos, segui o design da Netflix com cores e fontes correspondentes.
+               O formulário de login foi cuidadosamente desenvolvido com validações HTML5, 
+               e adicionei animações sutis para tornar a experiência do usuário mais agradável.
+               Em resumo, o projeto resultou em uma tela de login que espelhava a estética da Netflix e oferecia funcionalidade e apelo visual. 
+               Foi uma experiência gratificante de desenvolvimento web."
+              data-link="https://github.com/Raphael135/spotify-player" />
+          </div>
+          <div class="box">
+            <img
+              src="./image/projects-img/pizzaria-page.png"
+              alt="pizzaria-page"
+              class="projects modal-trigger"
+              data-title="Pizzaria - Divino Forno"
+              data-description="Criei esse projeto no intuito de praticar minhas habilidades com os displays do css."
+              data-link="https://github.com/Raphael135/spotify-player" />
+          </div>
+          <div class="box">
+            <img
+              src="./image/projects-img/landding-page-glass.png"
+              alt="landding-page-glass"
+              class="projects modal-trigger"
+              data-title="Form Glass"
+              data-description="Utilizei esse mini projeto para colocar em pratica minhas habilidades com HTML e CSS,
+               treinando o conceito de criar formulários e utilizar alguns filtros disponiveis no CSS como o filtro de transparência."
+              data-link="https://github.com/Raphael135/spotify-player" />
+          </div>
         </div>
 
         <div class="more">
-          <h2>Ver mais</h2>
+          <h2>
+            <a
+              href="https://github.com/Raphael135?tab=repositories"
+              target="_blank"
+              >Ver mais</a
+            >
+          </h2>
         </div>
         <hr class="line" />
-
       </section>
 
       <section>
@@ -98,13 +173,24 @@
           <h2>Sobre mim</h2>
         </div>
         <div>
-        <p class="descricao2">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          Doloremque sapiente labore voluptates expedita repudiandae minus dolorem incidunt cumque ipsa consequuntur quam accusamus obcaecati.
-        </p>
+          <p class="descricao2">
+            Tenho 22 anos e sou natural de São Paulo. Concluí o ensino médio e
+            atualmente estou cursando Análise e Desenvolvimento de Sistemas
+            (ADS) na Unicesumar, sempre em busca de novos desafios e
+            aprendizados. Atualmente, atuo como Desenvolvedor e Suporte de TI na
+            empresa Gaya, onde coloco em prática meus conhecimentos e aprimoro
+            minhas habilidades diariamente. A tecnologia é minha grande paixão,
+            e estou constantemente explorando novas tendências e soluções para
+            expandir meu domínio na área.
+          </p>
         </div>
       </section>
     </main>
-    
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="script.js"></script>
   </body>
 </html>
