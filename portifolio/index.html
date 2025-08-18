@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/portifolio/image/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/portifolio/image/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/portifolio/image/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -29,18 +34,18 @@
         <a id="modalLink" href="#" target="_blank" class="btn">Ver no GitHub</a>
       </div>
     </div>
-    <nav id="navigation">
+    <nav class="navigation">
       <ul>
-        <a href="#">.Sobre mim</a>
+        <a href="#sobre-mim">.Sobre mim</a>
       </ul>
       <ul>
-        <a href="#">.Projetos</a>
+        <a href="#meus-projetos">.Projetos</a>
       </ul>
       <ul>
-        <a href="#">.Tecnologias</a>
+        <a href="#skills">.Tecnologias</a>
       </ul>
       <ul>
-        <a href="#">.Contato</a>
+        <a href="#contato">.Contato</a>
       </ul>
     </nav>
 
@@ -52,20 +57,20 @@
           <h2>Rodolfo</h2>
         </div>
 
-        <div class="profile"><img src="image/profile/foto_de_perfil.jpeg" alt="profile-img"></div>
+        <div class="profile">
+          <img src="image/profile/foto_de_perfil.jpeg" alt="profile-img" />
+        </div>
       </section>
 
       <section>
         <div class="descricao">
-          <p id="descricao3">Desenvolvedor Fullstack</p>
-          <p>
-            Código com propósito: acessível, moderno e cheio de impacto.
-          </p>
+          <p id="descricao3" class="typewriter">Desenvolvedor Fullstack</p>
+          <p>Transformando ideias em código.</p>
         </div>
       </section>
       <hr class="line" />
 
-      <section>
+      <section id="skills">
         <div class="sub-title">
           <h2>Tecnologias</h2>
         </div>
@@ -86,46 +91,55 @@
       </section>
       <hr class="line" />
 
-      <section data-aos="flip-right">
+      <section id="meus-projetos" data-aos="flip-right">
         <div class="project" data-aos="fade-up">
           <h2>Projetos</h2>
         </div>
         <div class="grid" data-aos="zoom-in">
           <div class="box">
             <img
-              src="./image/projects-img/prime-video.png"
+              src="./image/projects-img/the-boys-prime-video.png"
               alt="Prime Video"
               class="projects modal-trigger"
-              data-title="Prime Video Clone"
-              data-description="Clone da landing page da Amazon Prime Video feito em HTML, CSS e JS."
-              data-link="https://github.com/Raphael135/prime-video-clone" />
+              data-description="
+                  Reproduzir a landing page da plataforma Amazon Prime Video.
+                  Tecnologias utilizadas: HTML, CSS e JavaScript puro.
+                  Funcionalidades:
+                  Estrutura visual semelhante à página oficial, com destaque para a série The Boys.
+                  Layout responsivo com uso de Flexbox e media queries.
+                  Destaques técnicos:
+                  Uso de imagens em alta resolução e tipografia semelhante à original.
+                  Organização semântica do HTML para facilitar SEO e acessibilidade.
+                  Separação clara entre estrutura (HTML), estilo (CSS) e comportamento (JS)."
+              data-title="🎬Prime Video Clone"
+              data-link="https://github.com/Raphael135/Amazon-login" />
           </div>
 
           <div class="box">
             <img
-              src="./image/projects-img/spotify-player.png"
+              src="./image/projects-img/spotify-ladding-page.png"
               alt="Spotify Player"
               class="projects modal-trigger"
-              data-title="Spotify Player"
+              data-title="🎵Spotify Player"
               data-description="Reprodução de um player inspirado no Spotify, usando HTML, CSS e JS."
-              data-link="https://github.com/Raphael135/spotify-player" />
+              data-link="https://playlist-raphael.netlify.app/"  />
           </div>
           <div class="box">
             <img
-              src="./image/projects-img/iphone13-shop.png"
+              src="./image/projects-img/iphone-ladding-page.png"
               alt="iphone13-landding-page"
               class="projects modal-trigger"
-              data-title="Ladding Page Iphone 13"
+              data-title="📱Ladding Page Iphone 13"
               data-description="Projeto de landing page do Iphone 13 utilizando HTML CSS e JavaScript, 
               criei uma tela de compra do aparelho e podendo alterar a cor, logo abaixo você pode ver como ficou o projeto."
-              data-link="https://github.com/Raphael135/spotify-player" />
+              data-link="https://github.com/Raphael135/IPhone" />
           </div>
           <div class="box">
             <img
               src="./image/projects-img/netflx-land-page.png"
               alt="netflx-land-page"
               class="projects modal-trigger"
-              data-title="Netflix"
+              data-title="🎬Netflix"
               data-description="Concluí o projeto da tela de login da Netflix com sucesso,
                combinando habilidades de HTML e CSS para criar uma interface autêntica e atraente. 
                Comecei estruturando a página com elementos semânticos, segui o design da Netflix com cores e fontes correspondentes.
@@ -133,26 +147,26 @@
                e adicionei animações sutis para tornar a experiência do usuário mais agradável.
                Em resumo, o projeto resultou em uma tela de login que espelhava a estética da Netflix e oferecia funcionalidade e apelo visual. 
                Foi uma experiência gratificante de desenvolvimento web."
-              data-link="https://github.com/Raphael135/spotify-player" />
+              data-link="https://github.com/Raphael135/Netflix-login" />
           </div>
           <div class="box">
             <img
               src="./image/projects-img/pizzaria-page.png"
               alt="pizzaria-page"
               class="projects modal-trigger"
-              data-title="Pizzaria - Divino Forno"
+              data-title="🍕Pizzaria - Massa Divina"
               data-description="Criei esse projeto no intuito de praticar minhas habilidades com os displays do css."
-              data-link="https://github.com/Raphael135/spotify-player" />
+              data-link="https://github.com/Raphael135/Pizzaria" />
           </div>
           <div class="box">
             <img
               src="./image/projects-img/landding-page-glass.png"
               alt="landding-page-glass"
               class="projects modal-trigger"
-              data-title="Form Glass"
+              data-title="🧾Form Glass"
               data-description="Utilizei esse mini projeto para colocar em pratica minhas habilidades com HTML e CSS,
                treinando o conceito de criar formulários e utilizar alguns filtros disponiveis no CSS como o filtro de transparência."
-              data-link="https://github.com/Raphael135/spotify-player" />
+              data-link="https://github.com/Raphael135/Login" />
           </div>
         </div>
 
@@ -165,15 +179,16 @@
             >
           </h2>
         </div>
-        <hr class="line" />
       </section>
 
-      <section>
-        <div class="sub-title">
+      <hr class="line" />
+
+      <section id="sobre-mim" data-aos="flip-right">
+        <div class="sub-title" data-aos="fade-up">
           <h2>Sobre mim</h2>
         </div>
-        <div>
-          <p class="descricao2">
+        <div class="descricao2">
+          <p>
             Tenho 22 anos e sou natural de São Paulo. Concluí o ensino médio e
             atualmente estou cursando Análise e Desenvolvimento de Sistemas
             (ADS) na Unicesumar, sempre em busca de novos desafios e
@@ -183,14 +198,59 @@
             e estou constantemente explorando novas tendências e soluções para
             expandir meu domínio na área.
           </p>
+
+          <img
+            class="sobre-"
+            src="image/projects-img/imagem-ilustrativa.png"
+            alt="Imagem Ilustrativa" />
+        </div>
+        
+      <hr class="line" />
+
+      <section id="contato" data-aos="fade-up">
+        <div class="sub-title2" data-aos="flip-right">
+          <h2>Entre em contato!</h2>
+        </div>
+          <div class="contato-container">
+            <div class="contato-cards">
+              <div class="card">
+                <i class="fas fa-envelope"></i>
+                <p><a href="mailto:gomesrodolfo656@gmail.com">gomesrodolfo656@gmail.com</a></p>
+              </div>
+              <div class="card">
+                <i class="fas fa-phone"></i>
+                <p><a href="tel:+5511963410741">(+55) 11 96341-0741</a></p>
+              </div>
+              <div class="card">
+                <i class="fab fa-github"></i>
+                <p><a href="https://github.com/Raphael135" target="_blank">GitHub: Raphael135</a></p>
+              </div>
+              <div class="card">
+                <i class="fab fa-linkedin"></i>
+                <p><a href="https://www.linkedin.com/in/raphael-rodolfo-687463225/" target="_blank">LinkedIn: Raphael Rodolfo</a></p>
+              </div>
+          </div>
+
+          <form class="contato-form" action="mailto:gomesrodolfo656@gmail.com" method="POST" enctype="text/plain">
+            <input type="text" name="nome" placeholder="Seu nome" required>
+            <input type="email" name="email" placeholder="Seu e-mail" required>
+            <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+          </form>
         </div>
       </section>
     </main>
-
+    
+          <a href="#" id="btn-topo" title="Voltar ao topo">
+          <svg width="28" height="24" viewBox="0 0 24 15" fill="none">
+          <path d="M12 4L6 10H18L12 4Z" fill="white" /></svg
+      ></a>
+      
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
     <script src="script.js"></script>
+    
   </body>
 </html>
